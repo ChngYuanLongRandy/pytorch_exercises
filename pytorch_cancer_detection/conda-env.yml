@@ -1,0 +1,12 @@
+name: torch-cancer-detection-env
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.8
+  - pip
+  - cudatoolkit=11.6
+  - pip:
+    - -r requirements.txt
+    - -r torch-requirements.txt
